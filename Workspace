@@ -1,0 +1,37 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0B6v0QTjKHdgbbHBoWjc4QjdFdW8",
+      "contentType": "text/html",
+      "name": "JsonXml.html",
+      "path": "0B6v0QTjKHdgbM3VpWGtzZkQ4Tms/"
+    },
+    {
+      "fileId": "0B6v0QTjKHdgbeTJHcTlTTWpoNTA",
+      "contentType": "text/html",
+      "name": "gallery.html",
+      "path": "0B6v0QTjKHdgbM3VpWGtzZkQ4Tms/"
+    },
+    {
+      "fileId": "0B6v0QTjKHdgbZ3FSZGVaT2VHbUU",
+      "contentType": "text/html",
+      "name": "test1.html",
+      "path": "0B6v0QTjKHdgbM3VpWGtzZkQ4Tms/"
+    }
+  ],
+  "cssFiles": [],
+  "javascriptFiles": [
+    {
+      "fileId": "0B6v0QTjKHdgbdkZvdlRnSEhVbzQ",
+      "contentType": "text/javascript",
+      "name": "initF150.js",
+      "path": "0B6v0QTjKHdgbM3VpWGtzZkQ4Tms/js"
+    },
+    {
+      "fileId": "0B6v0QTjKHdgbRG1TOHNUclNNVFU",
+      "contentType": "text/javascript",
+      "name": "define.js",
+      "path": "0B6v0QTjKHdgbM3VpWGtzZkQ4Tms/js"
+    }
+  ]
+}

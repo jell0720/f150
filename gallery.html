@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>社經圖表 </title>
+    <link href="stylesheets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/se7en-font.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/isotope.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/jquery.fancybox.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fullcalendar.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/wizard.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/select2.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/morris.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/datatables.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/datepicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/timepicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/colorpicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/daterange-picker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/typeahead.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/summernote.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/pygments.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/color/green.css" media="all" rel="alternate stylesheet" title="green-theme"
+        type="text/css" />
+    <link href="stylesheets/color/orange.css" media="all" rel="alternate stylesheet"
+        title="orange-theme" type="text/css" />
+    <link href="stylesheets/color/magenta.css" media="all" rel="alternate stylesheet"
+        title="magenta-theme" type="text/css" />
+    <link href="stylesheets/color/gray.css" media="all" rel="alternate stylesheet" title="gray-theme"
+        type="text/css" />
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascripts/raphael.min.js" type="text/javascript"></script>
+    <script src="javascripts/selectivizr-min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.vmap.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.vmap.sampledata.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.vmap.world.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+    <script src="javascripts/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="javascripts/gcal.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="javascripts/datatable-editable.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.easy-pie-chart.js" type="text/javascript"></script>
+    <script src="javascripts/excanvas.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="javascripts/isotope_extras.js" type="text/javascript"></script>
+    <script src="javascripts/modernizr.custom.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="javascripts/select2.js" type="text/javascript"></script>
+    <script src="javascripts/styleswitcher.js" type="text/javascript"></script>
+    <script src="javascripts/wysiwyg.js" type="text/javascript"></script>
+    <script src="javascripts/summernote.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.inputmask.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.validate.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-fileupload.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-timepicker.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-colorpicker.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="javascripts/typeahead.js" type="text/javascript"></script>
+    <script src="javascripts/daterange-picker.js" type="text/javascript"></script>
+    <script src="javascripts/date.js" type="text/javascript"></script>
+    <script src="javascripts/morris.min.js" type="text/javascript"></script>
+    <script src="javascripts/skycons.js" type="text/javascript"></script>
+    <script src="javascripts/fitvids.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="javascripts/main.js" type="text/javascript"></script>
+    <script src="javascripts/respond.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--/.針對上述各類源生模組定義-->
+    <script type="text/javascript" src="js/define.js"></script>
+    <!--/.啟動程式-->
+    <script type="text/javascript" src="js/initF150.js"></script>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        name="viewport">
+</head>
+<body>
+    <div class="modal-shiftfix">
+        <!-- Navigation -->
+        <div class="navbar navbar-fixed-top scroll-hide">
+            <div class="container-fluid main-nav clearfix">
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="index-2.html"><span aria-hidden="true" class="se7en-home"></span>主控版</a>
+                        </li>
+                        <li><a class="current" href="social.html"><span aria-hidden="true" class="se7en-feed">
+                        </span>社經資料</a> </li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#"><span aria-hidden="true"
+                            class="se7en-star"></span>特色<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="buttons.html">Buttons</a> </li>
+                                <li><a href="fontawesome.html">Font Awesome Icons</a> </li>
+                                <li><a href="glyphicons.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Glyphicons
+                                    </p>
+                                </a></li>
+                                <li><a href="components.html">Components</a> </li>
+                                <li><a href="widgets.html">Widgets</a> </li>
+                                <li><a href="typo.html">Typography</a> </li>
+                                <li><a href="grid.html">Grid Layout</a> </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#"><span aria-hidden="true"
+                            class="se7en-forms"></span>表單<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="form-components.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Form Components
+                                    </p>
+                                </a></li>
+                                <li><a href="form-advanced.html">Advanced Forms</a> </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#"><span aria-hidden="true"
+                            class="se7en-tables"></span>資料表格<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tables.html">Basic tables</a> </li>
+                                <li><a href="datatables.html">DataTables</a> </li>
+                                <li><a href="datatables-editable.html">
+                                    <div class="notifications label label-warning">
+                                        New
+                                    </div>
+                                    <p>
+                                        Editable DataTables
+                                    </p>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="charts.html"><span aria-hidden="true" class="se7en-charts"></span>圖表</a>
+                        </li>
+                        <li class="dropdown"><a data-toggle="dropdown" href="#"><span aria-hidden="true"
+                            class="se7en-pages"></span>頁面<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="chat.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Chat
+                                    </p>
+                                </a></li>
+                                <li><a href="calendar.html">Calendar</a> </li>
+                                <li><a href="timeline.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Timeline
+                                    </p>
+                                </a></li>
+                                <li><a href="login1.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Login 1
+                                    </p>
+                                </a></li>
+                                <li><a href="login2.html">Login 2</a> </li>
+                                <li><a href="signup1.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Sign Up 1
+                                    </p>
+                                </a></li>
+                                <li><a href="signup2.html">Sign Up 2</a> </li>
+                                <li><a href="invoice.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        Invoice
+                                    </p>
+                                </a></li>
+                                <li><a href="faq.html"><span class="notifications label label-warning">New</span>
+                                    <p>
+                                        FAQ
+                                    </p>
+                                </a></li>
+                                <li><a href="filters.html">Filter Results</a> </li>
+                                <li><a href="404-page.html">404 Page</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html"><span aria-hidden="true" class="se7en-gallery"></span>相簿</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
+        <div class="container-fluid main-content">
+            <div class="page-title">
+                <h1>
+                    社經
+                </h1>
+                <div class="row">
+                <button class="btn  btn-primary" type="button" data-toggle="collapse" data-target="#optionDIV"
+                    aria-expanded="false" aria-controls="optionDIV"><i class="icon-user"></i>
+                    社經查詢
+                </button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tableDiv"
+                    aria-expanded="false" aria-controls="tableDiv"><i class="icon-reorder"></i>
+                    表格呈現
+                </button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#chartDiv"
+                    aria-expanded="false" aria-controls="chartDiv">  <i class="icon-bar-chart"></i>
+                    圖表呈現
+                </button>
+               </div>
+
+            </div>
+            <!-- end Gallery with captions -->
+            <div id="optionDIV" class="row">
+                <div class=" col-md-4">
+                    <div class="widget-container fluid-height">
+                      <div class="heading ">
+                            <i class="icon-list-ol"></i>社經清單
+                        </div>
+                   
+                        <div class="menu1 widget-content padded">
+                          <div class="heading">
+                            <i class="glyphicon glyphicon-user"></i>1.登記人口
+                        </div>
+                            <div class="peopleList">
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio1" type="radio" mode="Line" value="2afaa5e5-fc7f-47ad-870c-b698fb809bec">
+                                        <span>總居住人口</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio1" type="radio" mode="Bar" value="ccfa8a17-5964-4e85-8cb4-b791a2c15f89">
+                                        <span>人口數依老中幼分</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio1" type="radio" mode="Bar" value="20848073-2873-4966-8267-54b5c71fb7ad">
+                                        <span>人口數依性別分</span>
+                                    </label>
+                                </div>
+                            </div>
+                      
+                        <div class="heading">
+                            <i class="glyphicon glyphicon-road "></i>2.車輛登記數
+                        </div>
+                    
+                            <div class="carList">
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio" mode="Bar" value="d8c09fc9-baa5-4043-b7a7-332d7e7f22c7">
+                                        <span>大客車</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio"><span>小客車</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio">
+                                        <span>大貨車</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio">
+                                        <span>小貨車</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio">
+                                        <span>機器腳踏車</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="optionsRadio2" type="radio">
+                                        <span>特種車</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                   
+                        <div class="heading">
+                                <i class="glyphicon glyphicon-credit-card "></i>3.所得</div>
+                      
+                            <div class="imcomeList">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span> 所得1</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span> 所得2</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span> 所得3</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 選單區塊1 -->
+                <div class="col-md-4">
+                    <div class="widget-container fluid-height">
+                        <div class="heading">
+                            <i class="icon-reorder"></i>縣市清單
+                        </div>
+                        <div class="menu2 widget-content padded">
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget-container fluid-height">
+                        <div class="heading">
+                            <i class="icon-reorder"></i>年期清單
+                        </div>
+                        <div class=" menu3 widget-content padded ">
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- end 選項區塊1 -->
+            <div id="tableDiv" class="row">
+                <!-- End Gallery with filtering and actions -->
+                <!-- Gallery carousel -->
+                <div class="col-lg-12">
+                    <div class="widget-container">
+                        <div class="heading">
+                            <i class="glyphicon glyphicon-th "></i>表格
+                        </div>
+                        <div class="widget-content padded">
+                            <div id="table_div" style="width: 100%; height: 500px; overflow-y: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- end 選項區塊2 -->
+            <div id="chartDiv" class="row">
+                <!-- End Gallery with filtering and actions -->
+                <!-- Gallery carousel -->
+                <div class="col-lg-12">
+                    <div class="widget-container">
+                        <div class="heading">
+                            <i class="glyphicon glyphicon-stats"></i>圖表
+                        </div>
+                        <div class="widget-content padded">
+                            <div id="chart1_div" style="width: 100%; height: 500px; overflow-y: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- end 選項區塊3 -->
+    
+            <!--/.<div  class="col-xs-6" -->
+        </div>
+    </div>
+</body>
+</html>
