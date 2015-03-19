@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['縣市年份','0-14歲','15-64歲','65歲以上'],
+          ['新北市1991',885002,2064586,157690],
+          ['新北市1992',875971,2119635,166740],
+          ['臺北市1991',652543,1878282,187167],
+          ['臺北市1992',637837,1862802,195434]
+        ]);
+        
+
+        var options = {
+          chart: {
+            title: '縣市年齡組成',
+           // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawVisualization);
+
+function drawVisualization() {
+  // Some raw data (not necessarily accurate)
+  var data = google.visualization.arrayToDataTable([
+          ['縣市年份','0-14歲','15-64歲','65歲以上','平均'],
+          ['新北市1991',885002,2064586,157690,1035759],
+          ['新北市1992',875971,2119635,166740,1054115],
+           ['新北市1993',868216,2177489,176924,1074210],
+          ['新北市1994',843265,2232567,184899,1086910],
+         // ['臺北市1991',652543,1878282,187167],
+          //['臺北市1992',637837,1862802,195434]
+        ]);
+
+  var options = {
+    title : '該縣市各年齡人口數',
+    vAxis: {title: "人口數"},
+    hAxis: {title: "縣市年份"},
+    seriesType: "bars",
+    series: {3: {type: "line"}}
+  };
+
+  var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
